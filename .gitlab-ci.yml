@@ -8,6 +8,8 @@ variables:
   ADDON_PUBLISH: "false"
   DOCKER_HUB_ORG: nqkdev
 
-stages:
-- build
-- deploy
+  PREFLIGHT_HADOLINT: "false"
+  PREFLIGHT_YAMLLINT: "false"
+  PREFLIGHT_MARKDOWNLINT: "false"
+  PREFLIGHT_JSONLINT: "true"
+  PREFLIGHT_SHELLCHECK: "true"
