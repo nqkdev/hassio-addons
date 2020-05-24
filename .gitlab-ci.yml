@@ -1,6 +1,8 @@
 include: https://raw.githubusercontent.com/hassio-addons/organization/master/gitlabci/addon.yml
 
 variables:
+  DOCKER_TLS_CERTDIR: ""
+
   ADDON_GITHUB_REPO: "nqkdev/hassio-addons"
   ADDON_SLUG: "octoprint_internal"
   ADDON_TARGET: "octoprint_internal"
