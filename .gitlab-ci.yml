@@ -7,6 +7,12 @@ variables:
   ADDON_SLUG: "octoprint_internal"
   ADDON_TARGET: "octoprint_internal"
 
+  ADDON_AARCH64: "false"
+  ADDON_AMD64: "true"
+  ADDON_ARMHF: "false"
+  ADDON_ARMV7: "false"
+  ADDON_I386: "false"
+
   # Do not use latest
   ADDON_AARCH64_BASE: "hassioaddons/base-aarch64:7.2.0"
   ADDON_AMD64_BASE: "hassioaddons/base-amd64:7.2.0"
