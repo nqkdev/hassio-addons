@@ -6,6 +6,11 @@ WAIT_PIDS=()
 # Start Nginx proxy
 bashio::log.info "Starting Nginx..."
 ingress_entry=$(bashio::addon.ingress_entry)
+target=$(bashio::config 'target')
+
+bashio::log.info "Target set to: ${target}"
+
+sed -i "s#%%target%%#${target}#g" /etc/nginx/nginx.conf
 sed -i "s#%%base_path%%#${ingress_entry}#g" /etc/nginx/nginx.conf
 nginx &
 WAIT_PIDS+=($!)

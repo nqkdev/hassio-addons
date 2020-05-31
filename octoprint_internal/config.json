@@ -12,6 +12,10 @@
     "panel_icon": "mdi:printer-3d",
     "panel_title": "OctoPrint",
     "stage": "stable",
-    "options": {},
-    "schema": {}
+    "options": {
+        "target": "172.17.0.1:5001"
+    },
+    "schema": {
+        "target": "str"
+    }
 }
