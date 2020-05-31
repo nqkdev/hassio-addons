@@ -17,6 +17,5 @@
     },
     "schema": {
         "target": "str"
-    },
-    "image": "nqkdev/octoprint_internal-{arch}"
+    }
 }
