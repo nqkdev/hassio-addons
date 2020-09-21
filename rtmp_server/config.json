@@ -1,0 +1,26 @@
+{
+    "name": "RTMP server",
+    "version": "0.0.1",
+    "slug": "rtmp-server",
+    "description": "RTMP simple server add-on for Home Assistant",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "application",
+    "webui": "http://[HOST]:[PORT:8080]",
+    "ingress": true,
+    "ingress_port": 8080,
+    "panel_icon": "mdi:video-wireless",
+    "panel_title": "RTMP server",
+    "ports": {
+        "1935/tcp": 1935,
+        "8080/tcp": null
+    },
+    "ports_description": {
+        "1935/tcp": "RTMP stream port",
+        "8080/tcp": "HTTP port"
+    },
+    "boot": "manual",
+    "homeassistant": "0.108.0",
+    "stage": "experimental",
+    "options": {},
+    "schema": {}
+}
