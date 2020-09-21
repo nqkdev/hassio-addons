@@ -1,6 +1,6 @@
 {
     "name": "RTMP server",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "slug": "rtmp-server",
     "description": "RTMP simple server add-on for Home Assistant",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
