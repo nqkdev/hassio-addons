@@ -6,7 +6,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN \
     apk add --no-cache \
-        nginx=1.16.1-r6 \
+        nginx \
         haproxy
 
 COPY nginx.conf /etc/nginx/nginx.conf
